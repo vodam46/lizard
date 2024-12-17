@@ -39,8 +39,12 @@ M.load = function()
 		elseif edit_mode == 'leg' then
 			edit_mode = 'part'
 		end
+		ask_if_rewrite = false
 	end)
-	menu:addEntry("Rename", function() renaming = true end)
+	menu:addEntry("Rename", function()
+		renaming = true
+		ask_if_rewrite = false
+	end)
 	menu:addEntry("Save", function()
 		creature_string = "return " .. require'inspect'(edited_creature)
 		file_name = "user_creatures/"..edited_creature.name..".lua"
@@ -57,6 +61,7 @@ M.load = function()
 		edited_creature = require'util.copy'(require'creatures.default')
 		table.insert(edited_creature.parts, {distance=0, size=0})
 		edit_mode = 'part-size'
+		ask_if_rewrite = false
 	end)
 
 	edited_creature = require'util.copy'(require'creatures.default')
