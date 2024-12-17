@@ -1,0 +1,73 @@
+probably better ui libraries
+
+support multiple body types
+	not just bilateral?
+	different shapes of each body part/leg
+		triangles
+		squares
+		different sides
+			same as snake
+
+maybe some textures?
+
+better legs
+	update them when theyre on the wrong side of the body
+		when elbow angle > body angle?
+
+stop them from converging, somehow - if they go for the closest target
+	claimed targets?
+	actual AI?
+		boid-like?
+
+vector metatable
+	improve the usage of it
+	more functions?
+	using normal numbers
+	change to an actual class?
+	https://love2d.org/wiki/Vectors
+
+more names - wordslist
+https://gist.github.com/iBobik/4446993#file-first_names-txt
+
+more options!!!
+save the options
+
+move all the various definitions to separate files
+change the hardcoded stuff to constants?
+	- menu positions
+	- editing window size
+	- all the strings - would make changing languages easier
+
+pause -> muted colors of the creatures in the background?
+
+different colors for body parts
+
+annotations!!!
+
+different length for forearm and the arm
+
+different languages? - for my brother
+
+relative window size
+
+positions not related to window size
+
+some of the functions i use in python?
+	- sum, list comprehensions?
+
+some sort of randomizer for distances, so they dont look so goofy
+
+prettifycation - if i want to show it to other people, i need to make it
+look actually decent
+
+https://youtu.be/xCGu5Z_vaps
+
+autoload newly created creatures
+
+load creature from file function
+
+improve the editor
+	- learn from some other editors?
+	- undo
+
+go through the file, and remove all the unneeded -
